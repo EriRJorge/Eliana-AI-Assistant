@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliana AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img alt="logo" src="/static/asian-anime-girl-wearing-a-green-bow (2).png">
+                <h1>Eliana AI</h1>
+            </div>
+            <div class="tagline">Your Intelligent Assistant</div>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-history" id="chatHistory">
+                <div class="message ai-message">
+                    <div class="avatar">
+                        <img alt="logo" src="/static/asian-anime-girl-wearing-a-green-bow (3).png">
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm Eliana. How can I help you today?</p>
+                        <span class="timestamp">Just now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <form id="chatForm">
+                    <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+                    <button type="submit" id="sendButton" aria-label="Send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="suggestions">
+                    <button type="button" class="suggestion-btn" data-text="Who are you?">Who are you?</button>
+                    <button type="button" class="suggestion-btn" data-text="What can you do?">What can you do?</button>
+                    <button type="button" class="suggestion-btn" data-text="What time is it?">What time is it?</button>
+                    <button type="button" class="suggestion-btn" data-text="What's the weather in New York City?">Weather in NYC?</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Eliana AI Assistant | Type_Software | <a href="#" id="clearChat">Clear Chat</a></p>
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
