@@ -286,9 +286,9 @@ def answer_fact_question(text):
         save_knowledge_base(knowledge_base)
 
         # Search the web for an answer
-        # web_result = web_search(subject)
-        # if web_result:
-        #     return web_result
+        web_result = web_search(subject)
+        if web_result:
+            return web_result
         
         return f"I don't know what {subject} is yet. If you tell me, I'll remember it for next time!"
     
